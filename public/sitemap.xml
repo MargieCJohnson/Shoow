@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://shoow.in/</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/movies/popular</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/movies/top_rated</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/movies/upcoming</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/movies/genre</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/movies/year/2020</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/shows/popular</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/shows/top_rated</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/shows/airing_today</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/shows/genre</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/shows/year/2021</loc>
+		</url>
+		<url>
+			<loc>https://shoow.in/questions</loc>
+		</url>
+	</urlset>
+
+

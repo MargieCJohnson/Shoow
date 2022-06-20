@@ -1,0 +1,47 @@
+@import "../../global";
+
+.modals {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: $modal-z;
+  border-radius: 10px;
+  transition: all 400ms;
+  min-width: 300px;
+  padding: 30px 20px 20px 20px;
+  background: var(--theme-bg);
+
+  &.open {
+    transform: translate(-50%, -70%);
+  }
+
+  &.closed {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal-underlay {
+  z-index: $modal-underlay-z;
+  display: inherit;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  transition: opacity 400ms;
+
+  &.open {
+    opacity: 0.5;
+    pointer-events: inherit;
+  }
+
+  &.closed {
+    opacity: 0;
+    pointer-events: none;
+  }
+  // removes the black overlay that iOS puts on top of clickable items
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

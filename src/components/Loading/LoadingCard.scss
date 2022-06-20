@@ -1,0 +1,35 @@
+@import "loading";
+
+.loading-card {
+  .poster {
+    @include skeleton-anim;
+    border-radius: 15px;
+    height: 250px;
+  }
+
+  .title {
+    @include skeleton-anim;
+    height: 1em;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+.loading-card-grid {
+  width: 165px;
+  flex: 0 0 auto;
+  margin-right: 20px;
+
+  .poster {
+    @include skeleton-anim;
+    border-radius: 15px;
+    height: 250px;
+  }
+
+  .title {
+    @include skeleton-anim;
+    height: 1em;
+    width: 80%;
+    margin: 10px auto;
+  }
+}

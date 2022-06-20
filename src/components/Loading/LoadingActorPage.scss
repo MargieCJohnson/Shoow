@@ -1,0 +1,11 @@
+@import "loading";
+
+.loading-actor-page {
+  .poster {
+    @include skeleton-anim;
+    height: 295px;
+  }
+  .personal {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,10 @@
+.list-move-btn {
+    color: #3498db;
+    font-size: 20px;
+    padding: 10px 5px 10px 15px;
+  
+    &:active {
+      color: darken(#3498db, 20);
+    }
+  }
+  

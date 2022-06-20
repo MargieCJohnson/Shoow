@@ -1,0 +1,80 @@
+@import "../../global";
+
+@mixin button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.leftbutton {
+  @include button;
+  // use --container-padding because we want the arrow button's position
+  // to be slightly different on mobile, so the arrow doesn't go outside the screen
+  left: calc(-1 * var(--container-padding) + 10px);
+}
+
+.rightbutton {
+  @include button;
+  right: calc(-1 * var(--container-padding) + 10px);
+}
+
+.outer-div {
+  position: relative;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll; // fix issues in firefox
+  overflow-y: hidden; // needed to ensure you can't scroll vertically (iPhone "bug")
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    width: 165px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .card1 {
+    width: 160px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+}
+
+.scroll-button {
+  // set z-index so the arrows are above the content in the scroller
+  z-index: 10;
+  outline: none;
+  font-size: 25px;
+  transition: opacity 300ms;
+
+  &.hidden {
+    opacity: 0;
+  }
+
+}
+.scroll-button {
+  // set z-index so the arrows are above the content in the scroller
+  z-index: 10;
+  outline: none;
+  font-size: 25px;
+  transition: opacity 300ms;
+
+  &.hidden {
+    opacity: 0;
+  }
+  svg {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+}

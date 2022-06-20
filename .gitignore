@@ -1,0 +1,14 @@
+# Local Netlify folder
+.netlify
+
+# node modules
+**/node_modules
+
+# other
+.env
+package-lock.json
+backup
+dist
+live
+pwd
+gg.txt

@@ -1,0 +1,112 @@
+@import "../../global";
+
+.app-header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  right: 0;
+  align-items: center;
+  z-index: $header-z;
+  transition: 300ms all;
+  display: flex;
+  transition: box-shadow 0.3s;
+  flex-shrink: 0;
+  padding: 0 40px;
+  height: 60px;
+  justify-content: space-between;
+  background-color: #e5ecef;
+  padding: env(safe-area-inset-top) 0 0 env(safe-area-inset-left);
+}
+
+#app-header-desktop {
+  grid-template-columns: minmax(100px, 500px) auto;
+  grid-gap: 40px;
+  padding: 42px;
+
+  #user-info {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 30px;
+    align-items: center;
+    grid-gap: 20px;
+
+    .user-img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      overflow: hidden; // needed so the avatar (which is square) is within the round div
+    }
+  }
+}
+
+#app-header-mobile {
+  grid-template-columns: auto 1fr auto auto;
+  grid-gap: 15px;
+  padding: 10px 15px;
+  height: 65px;
+
+  .searchbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+  
+  #search-hide svg {
+    width: 38px;
+  }
+
+  #toggle-btn svg, #header-search-btn svg {
+    width: 25px;
+  }
+
+  & > button {
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    color: inherit;
+  }
+
+  #header-title {
+    text-align: center;
+    font-weight: 800;
+    padding: 6px 0 6px 50px;
+  }
+}
+
+.loginModal {
+  color: var(--text-color);
+}
+
+.header-wrapper {
+  // hack to make the dark banner appear on top of the backdrop image
+  height: 0;
+  overflow: visible;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  z-index: $header-z;
+
+
+  &.default {
+    height: initial;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+  }
+
+  &.active {
+    height: initial;
+    box-shadow: 0 4px 20px rgba(88, 99, 148, 0.17);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+  }
+
+
+
+  &.dark {
+    .app-header {
+      color: white;
+      background: none;
+      -webkit-backdrop-filter: none;
+    }
+  }
+}

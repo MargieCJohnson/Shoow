@@ -1,0 +1,21 @@
+.img-with-fb {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.fallback-img {
+  font-size: 2em;
+  color: #d3d3d3;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .no-img-text {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}

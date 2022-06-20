@@ -1,0 +1,80 @@
+.poster-card {
+  display: block;
+  .box-shadow {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .poster {
+    width: 100%;
+    transition: all 0.2s ease;
+    border-radius: 15px;
+  }
+
+  .overlay-text {
+    display: inline-block;
+    position: relative;
+  }
+
+  .overlay-text-rating {
+    position: absolute;
+    background: rgb(21 13 13 / 44%);
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    right: 8px;
+    bottom: 15px;
+    color: rgb(255 255 255);
+    backdrop-filter: blur(16px) saturate(180%);
+    font-weight: 800;
+  }
+
+  .poster.fallback-img {
+    height: 80%;
+  }
+
+  .poster:hover {
+    opacity: 0.7;
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+    --webkit-filter: blur(4px);
+    filter: blur(0.5px);
+    outline: var(--outline-img) auto 1px;
+  }
+
+  .title {
+    font-size: 1em;
+    font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+ .meta {
+    font-size: .9em;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    color: #6c757d;
+  }
+
+  .dot {
+    width: 3px;
+    height: 3px;
+    vertical-align: 2px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #5e5e5e;
+    content: "";
+    margin: 0 5px;
+  }
+
+  .type {
+    display: inline-block;
+    float: right;
+    font-style: normal;
+    border: 1px solid #868e96;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: .8em;
+  }
+}

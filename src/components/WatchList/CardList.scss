@@ -1,0 +1,87 @@
+@import "../../global";
+
+.card-list {
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .card-list-item-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 30px -12px;
+
+    &:first-child {
+      margin-top: 30px;
+    }
+  }
+
+  .card-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-end;
+    grid-gap: 5px 15px;
+    border-radius: 5px;
+    padding: 5px 15px 10px 15px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    grid-template-areas:
+      "poster title"
+      "poster info";
+
+    .poster {
+      grid-area: poster;
+      margin-top: -20px;
+      width: 80px;
+      line-height: 1;
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .title {
+      font-size: 16px;
+      grid-area: title;
+      color: var(--font-color);
+      padding: 0;
+      align-self: flex-start;
+    }
+
+    .info {
+      grid-area: info;
+      color: rgba(var(--text-color), 0.3);
+      font-size: 14px;
+      display: grid;
+      grid-template-areas:
+        "progress rating"
+        "added icon";
+
+      .progress {
+        grid-area: progress;
+      }
+      .rating {
+        grid-area: rating;
+        justify-self: end;
+        color: var(--font-color);
+
+        .fa-star {
+          color: #ffde4d;
+        }
+      }
+      .added {
+        grid-area: added;
+      }
+      .media-type {
+        grid-area: icon;
+        justify-self: end;
+      }
+    }
+  }
+  .buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,29 @@
+@import "loading";
+
+.loading-text {
+  @include skeleton-anim;
+  height: 1em;
+  display: inline-block;
+  margin-right: 7px; // spaces between "words"
+
+  &.word {
+    width: 3ch;
+  }
+
+  &.short {
+    width: 10ch;
+  }
+
+  &.long {
+    width: 15ch;
+    max-width: 70%;
+  }
+
+  &.half {
+    width: calc(50% - 7px);
+  }
+
+  &.xl {
+    width: calc(80% - 7px);
+  }
+}

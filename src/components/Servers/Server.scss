@@ -1,0 +1,210 @@
+.play-buttons {
+    display: inline-block;
+    position: relative;
+  }
+
+  .play-button svg {
+    width: 25px;
+    margin-left: 6px;
+  }
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .play-button-container {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(330deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
+    box-shadow: 0 24px 72px 0 rgba(0, 0, 0, .5);
+    -webkit-transition: 300ms all cubic-bezier(.4, 0, .2, 1);
+    transition: 300ms all cubic-bezier(.4, 0, .2, 1);
+    z-index: 50005;
+  }
+
+  .play-button-container:before {
+    left: 50%;
+    top: 50%;
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(330deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .2) 100%);
+    box-shadow: 0 24px 72px 0 rgba(0, 0, 0, .5);
+    -webkit-transition: 300ms all cubic-bezier(.4, 0, .2, 1);
+    transition: 300ms all cubic-bezier(.4, 0, .2, 1);
+      animation: pulse-border 1500ms ease-out infinite;
+
+  }
+
+  @keyframes pulse-border {
+  0% {
+    transform: translate3d(-50%,-50%,0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+  .play-button-container:hover {
+    cursor: pointer;
+  }
+  .play-button-container:hover .play-button {
+    -webkit-transform: scale(1.16);
+    transform: scale(1.16);
+  }
+
+  .play-button-container .play-button {
+    z-index: 50004;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 0.8;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-transition: 300ms all cubic-bezier(.4, 0, .2, 1);
+    transition: 300ms all cubic-bezier(.4, 0, .2, 1);
+  }
+
+
+.gooey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  z-index: 50008;
+}
+.gooey .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  background: var(--default-color);
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: dot 2.8s infinite;
+}
+.gooey .dots {
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: dots 2.8s infinite;
+}
+.gooey .dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  background: #ffff;
+  border-radius: 50%;
+}
+@-moz-keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@-webkit-keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@-o-keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@-moz-keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+@-webkit-keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+@-o-keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+@keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}

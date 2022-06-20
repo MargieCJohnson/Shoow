@@ -1,0 +1,148 @@
+.signup-page {
+
+  width: 100%;
+  text-align: center;
+
+.login {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.login__content{
+  display: grid;
+}
+
+.g-recaptcha {transform: scale(0.85); transform-origin: left top;}
+
+.login__forms{
+  position: relative;
+  height: 200px;
+}
+
+.login__registre {
+  bottom: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  text-align: center;
+  animation-duration: .4s;
+  animation-name: animate-login;
+}
+
+@keyframes animate-login{
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.1,1.1);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+
+.login__title{
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+.login__box{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: .5rem;
+  padding: 1.125rem 1rem;
+  background-color: #fff;
+  box-shadow: var(--default-box-shadow);
+  margin-top: 1rem;
+  border-radius: .5rem;
+}
+
+svg {
+  fill: #4784ff;
+}
+
+.login__input{
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #A49EAC;
+}
+
+.login__input::placeholder{
+  font-size: 0.9rem;
+  color: #A49EAC;
+}
+
+.login__forgot{
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-top: .5rem;
+  font-size: .850rem;
+  font-weight: 600;
+  color: #A49EAC;
+}
+
+.login__button{
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+  background-color: #4784ff;
+  color: #FFF;
+  font-weight: 600;
+  text-align: center;
+  border-radius: .5rem;
+  transition: .3s;
+  box-shadow: 0 6px 30px -10px #4a74c9;
+}
+
+.login__button:hover{
+  background-color: #4a74c9;
+}
+
+.login__signin, .login__signup{
+  color: #4784ff;
+  cursor: pointer;
+}
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 576px){
+  .login__forms{
+    width: 348px;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 576px){
+  .login__forms{
+    width: 348px;
+    justify-self: center;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .login{
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .login__content{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    height: calc(100vh - 20vh);
+    margin: auto;
+  }
+
+  .login__registre {
+    left: -11rem;
+  }
+
+  .login__registre{
+    bottom: -2rem;
+  }
+}
+
+}

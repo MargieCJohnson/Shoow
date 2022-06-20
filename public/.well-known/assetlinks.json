@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "in.shoow.twa",
+                     "sha256_cert_fingerprints": ["14:8E:F0:BD:3D:C9:6C:97:25:4C:12:92:E5:D1:46:2C:87:60:D1:46:82:96:77:37:30:88:E2:D7:61:CD:D3:36"] }
+      }
+]

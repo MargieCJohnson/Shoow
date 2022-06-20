@@ -1,0 +1,26 @@
+@import "loading";
+
+.loading-details-page {
+  #banner {
+    @include skeleton-anim;
+  }
+
+  .details-title {
+    .poster, .title, .info, .bottom {
+      @include skeleton-anim;
+    }
+
+    .title, .info, .bottom {
+      height: 1em;
+    }
+
+    .title {
+      width: 80%;
+    }
+
+    .bottom {
+      width: 100px;
+      height: 2em;
+    }
+  }
+}

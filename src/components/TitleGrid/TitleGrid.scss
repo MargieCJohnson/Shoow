@@ -1,0 +1,15 @@
+.title-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+}
+
+.title-element {
+  border-radius: 4px;
+  border-width: 2px 10px 4px 20px;
+
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+}

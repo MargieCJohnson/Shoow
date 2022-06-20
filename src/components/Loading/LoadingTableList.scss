@@ -1,0 +1,13 @@
+@import "loading";
+
+.loading-table-list-row {
+  .poster-name {
+    display: flex;
+    align-items: center;
+  }
+
+  .poster {
+    @include skeleton-anim;
+    height: 75px;
+  }
+}

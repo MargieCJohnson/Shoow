@@ -1,0 +1,61 @@
+
+:root {
+  --body-font: "DM Sans", sans-serif;
+  --theme-bg-color: #fafafb;
+  --text-color: #646464;
+  --active-color: #0162ff;
+  --active-light-color: #2b2ecf;
+  --header-bg-color: #fff;
+  --search-border-color: #efefef;
+  --border-color: #d8d8d8;
+  --alert-bg-color: #e8f2ff;
+  --subtitle-color: #83838e;
+  --inactive-color: #f0f0f0;
+  --placeholder-color: #9b9ba5;
+  --time-button: #fc5757;
+  --level-button: #5052d5;
+  --button-color: #fff;
+  --border-size: 0.125rem;
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --font-family: monospace;
+  --color-primary: white;
+  --color-secondary: black;
+  --color-tertiary: dodgerblue;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --space: 1rem;
+  --container-padding: 40px;
+}
+
+
+// this is for light mode
+$primary-color: #96deda;
+$sidebar-size: 250px;
+$bg-color: #F8F9FA;
+$border-color: #96deda;
+
+// this is for dark mode
+$primary-color-dark-mode: #fac383;
+$border-color: #D6D6D6;
+
+//dark mode buttons
+$dark-mode-text-color: #1d1c1b;
+
+// Put all z-indexes here
+$toast-z: 99999;
+$modal-z: 50000;
+$modal-underlay-z: 49999;
+$sidebar-z: 9999;
+$overlay-z: 999;
+$header-z: 99;
+
+// sidebar
+$side-padding: 40px;
+$border-size: 7px;
+
+// default values
+$default-text-color: #808191;
+$default-bgcolor: #4784ff;
+$default-boxshadow: 0px 3px 6px 0px RGB(0 0 0 / 10%), 0px 1px 3px 0px RGB(0 0 0 / 8%);
+$default-color: #fff;
+$default-side-color: #808191;

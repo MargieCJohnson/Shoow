@@ -1,0 +1,27 @@
+@import "../../../global";
+#sidebar {
+
+.sidebar-link {
+    svg {
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    &:hover svg {
+      background: var(--tab-bg);
+      color: var(--tab-color);
+      box-shadow: $default-boxshadow;
+    }
+
+    &.is-active svg {
+      background: var(--tab-bg);
+      color: var(--tab-color);
+      box-shadow: $default-boxshadow;
+    }
+
+    &:hover, &.is-active {
+      font-weight: 600;
+      color: var(--font-color);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.error-text {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+main #errorText {
+  font-size: 22px;
+  margin: 14px 0;
+}
+
+main #errorLink {
+  font-size: 20px;
+  padding: 12px;
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 3px 6px 0px RGB(0 0 0/10%), 0px 1px 3px 0px RGB(0 0 0/8%);
+  transition: all 0.5s ease-in-out;
+}
+
+main #errorLink:hover, main #errorLink:active {
+  color: #fff;
+  background: hsla(0,0%,100%,.1);
+}
+
+main #g6219 {
+  transform-origin: 85px 4px;
+  -webkit-animation: an1 12s 0.5s infinite ease-out;
+          animation: an1 12s 0.5s infinite ease-out;
+}

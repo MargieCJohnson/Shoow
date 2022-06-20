@@ -1,0 +1,62 @@
+@import "../../global";
+
+.cnAjFT {
+    font-family: proxima-nova, sans-serif;
+    min-height: 38px;
+    font-size: 10px;
+    line-height: 22px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    color: rgb(242, 244, 251);
+    border-radius: 8px;
+    transition: background-color 0.15s ease-out 0s, color, opacity, border;
+    outline: none;
+    text-decoration: none;
+    background: rgb(57, 148, 255);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.dBJWmB {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.15s ease-out 0s;
+}
+
+.eXyiay {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition: opacity 0.15s ease-out 0s;
+}
+
+.login-btn {
+  background: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid $border-color;
+  color: var(--text-color);
+  padding-right: 0;
+
+  &:active {
+    background: darken(white, 20%);
+    color: black;
+  }
+}
+.login-btn:hover {
+  opacity: 0.6;
+}

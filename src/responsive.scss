@@ -1,0 +1,166 @@
+@import "global";
+
+#less-container {
+    margin-left: 85px;
+    transition-duration: 0.2s;
+  }
+#main-container {
+    margin-left: 230px;
+    transition-duration: 0.2s;
+  }
+
+
+@media (max-width: 485px){
+  .poster-grid {
+    grid-template-columns: repeat(auto-fill,minmax(110px,1fr));
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  #overlay {
+    display: inherit;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    transition: opacity 300ms;
+
+    &.open {
+      opacity: 0.3;
+      pointer-events: inherit;
+    }
+
+    &.closed {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  #sidebar {
+    transition: transform 300ms;
+
+    &.closed { 
+      transform: translateX(-1 * $sidebar-size); 
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    &.open { 
+      transform: translateX(0);
+      -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+    }
+  }
+
+  #app-header-desktop {
+    grid-template-columns: auto minmax(150px, 500px) auto;
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 900px) { 
+  button#toggle-btn svg{
+    display: none;
+  }
+}
+
+
+@media (max-width: 900px) {
+  #less-container {
+    margin-left: 0px;
+  }
+
+   #main-container {
+    margin-left: 0px;
+  }
+
+  :root {
+    --container-padding: 25px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .loading-card-grid {
+    width: 165px;
+    
+  }
+
+.modal__back, .modal__server {
+  top: 5px;
+}
+
+.change_link_icon {
+  top: 5px;
+  right: 12%;
+}
+
+  .movie-info .synopsis {
+    font-size: 14px;
+  }
+
+
+  .tabs { text-align: center; }
+
+  .details-title {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+
+    .poster {
+      margin-top: -150px;
+    }
+
+    .video-p-name {
+      justify-content: center;
+    }
+
+    .text { 
+      text-align: center;
+      .title {
+        font-size: 25px;
+        margin: 2px 20px 10px 20px;
+      }
+      .bottom { justify-content: center; }
+    }
+  }
+
+  .presentation {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+  
+  #homepage .main-blog__title {
+    font-size: 17px;
+    max-width: 16ch;
+  }
+  
+  .watch-list {
+    .title-bar {
+      h1 {
+        font-size: 1.7em;
+      }
+      .edit-btn {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .primary-btn, .secondary-btn {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+    .vid-quality-selector button {
+        font-size: 9px;
+    }
+}

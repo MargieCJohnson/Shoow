@@ -1,0 +1,40 @@
+.like1.red {
+  background-color: #4784ff;
+  box-shadow: 0 6px 30px -10px #4a74c9;
+
+  &:active {
+    background: darken(#4784ff, 20%);
+    color: #fff;
+  }
+
+  &:disabled {
+    background: rgba(#4a74c9, 0.3);
+    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+    cursor: not-allowed;
+  }
+
+}
+
+.like1 {
+  display: flex;
+  align-items: center;
+  background-color: var(--button-bg);
+  color: #fff;
+  border: 0;
+  font-family: var(--body-font);
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.like1 svg {
+  width: 15px;
+  flex-shrink: 0;
+  margin-right: 2px;
+  padding: 0;
+}
+.like + .like1 {
+  margin-left: 5px;
+}

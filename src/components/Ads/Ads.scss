@@ -1,0 +1,51 @@
+.homepage_cad {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 49999;
+}
+
+
+
+.carbon-cad_close-btn {
+    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -5px;
+    color: #b1b0b5;
+}
+
+.skipad {
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+    background-color: #2191FB;
+    text-transform: lowercase;
+}
+
+.carbon-cad {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    border-radius: 0;
+}
+
+
+#sticky-cad, .carbon-cad {
+    background: var(--icon-bgcolor);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.carbon-cad, .floating-cad {
+    box-shadow: RGB(0 0 0 / 11%) 0 0 0 1px, RGB(0 0 0 / 5%) 0 10px 10px -5px;
+}

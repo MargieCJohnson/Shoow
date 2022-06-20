@@ -1,0 +1,25 @@
+@import "../global";
+
+#overlay {
+  // see responsive.scss
+  display: none;
+  z-index: $overlay-z;
+
+  // removes the black overlay that iOS puts on top of clickable items
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.toast-container {
+  z-index: $toast-z;
+  text-align: center;
+}
+
+.toast {
+  padding-top: calc(8px + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(8px + env(safe-area-inset-bottom));
+}
+
+.removeToast {
+  background: #303030;
+  color: white;
+}

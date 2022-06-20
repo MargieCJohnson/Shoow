@@ -1,0 +1,9 @@
+.list-delete-btn {
+  color: red;
+  font-size: 20px;
+  padding: 10px 5px 10px 15px;
+
+  &:active {
+    color: darken(red, 20);
+  }
+}

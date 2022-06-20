@@ -1,0 +1,62 @@
+html {
+  --bg: #1d1f20;
+  --switcher-bg: #232527;
+  --shadow-color: #000000b0;
+  --color-text: #777;
+  --color-text-active: #7489ff;
+  --color-arrow: #88888852;
+}
+
+html[data-theme='light-mode'] {
+  --bg: #FCFCFC;
+  --switcher-bg: #fff;
+  --shadow-color: #00000044;
+  --color-text: #88888895;
+  --color-text-active: #7489ff;
+  --color-arrow: #656565;
+}
+
+
+body.dark-light svg {
+  margin-right: 8px;
+  width: 22px;
+  cursor: pointer;
+  fill: transparent;
+  transition: 0.5s;
+}
+
+body.dark-mode body.dark-light svg {
+  fill: #ffce45;
+  stroke: #ffce45;
+  width: 25px;
+}
+
+.container-darkmode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switcher {
+  user-select: none;
+  cursor: pointer;
+}
+
+.switcher input[type=checkbox] {
+  height: 0;
+  width: 0;
+  display: none;
+}
+.switcher input[type=checkbox] + div > i {
+  transition: all 400ms cubic-bezier(0.995, -0.265, 0.855, 0.505);
+}
+.switcher input[type=checkbox]:checked + div .arrow {
+  transform: rotate(-180deg);
+}
+.switcher input[type=checkbox]:checked + div > :first-child {
+  fill: #ffce45;
+  stroke: #ffce45;
+}
+.switcher input[type=checkbox]:not(:checked) + div > :last-child {
+  color: var(--color-text-active);
+}

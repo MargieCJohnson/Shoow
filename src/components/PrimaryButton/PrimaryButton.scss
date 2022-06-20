@@ -1,0 +1,21 @@
+@import "../../global";
+
+.primary-btn {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  background-color: var(--default-color);
+  padding: 10px 35px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+
+  &:active {
+    background: darken(#4784ff, 20%);
+    color: #fff;
+  }
+
+  &:disabled {
+    background: rgba(#4784ff, 0.3);
+    cursor: not-allowed;
+  }
+}
